@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </div>
       <img
-        src="https://pixabay.com/get/g84c6a80b10217a20265e843f1cd1006b93f1bf56a41723aebb9cd81b9901f82cb726306ea49860b538b9ad51754ae56eee0259c06c81f6d364c10dbf28d2339d2d680efe38861023f1d1cab3ddc3e94e_640.jpg"
+        src="https://qmedcenter.com/wp-content/uploads/2023/02/Vector-doctor-examining-a-patient-at-the-clinic-portraying-20-qualities-that-make-a-good-doctor.webp"
         
         alt="Doctor"
         class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full"
@@ -229,6 +229,116 @@ export default function Home() {
         </div>
       </div>
     </section>
+
+    <section id="about" class="py-12 md:py-16 lg:py-20 bg-base-200">
+  <div class="px-4 md:px-6">
+    <div class="flex flex-col items-center justify-center space-y-4 text-center">
+      <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">About Us</h2>
+      <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+        At Aditya Clinic, we believe in providing holistic healthcare services that focus on the well-being of the entire family. Our clinic is equipped with state-of-the-art facilities and a team of experienced healthcare professionals who are dedicated to offering compassionate and personalized care.
+      </p>
+    </div>
+    <div class="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold mb-2">Our Mission</h3>
+        <p class="text-muted-foreground">
+          To deliver exceptional healthcare services that enhance the quality of life for our patients and their families.
+        </p>
+      </div>
+      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold mb-2">Our Vision</h3>
+        <p class="text-muted-foreground">
+          To be the leading healthcare provider in our community, known for our commitment to patient care and excellence in medical services.
+        </p>
+      </div>
+      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold mb-2">Our Values</h3>
+        <ul class="text-muted-foreground list-disc list-inside">
+          <li>Compassion</li>
+          <li>Integrity</li>
+          <li>Excellence</li>
+          <li>Respect</li>
+        </ul>
+      </div>
+      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold mb-2">Our Facilities</h3>
+        <p class="text-muted-foreground">
+          We offer a range of state-of-the-art facilities including modern diagnostic equipment and comfortable patient care areas.
+        </p>
+      </div>
+      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold mb-2">Our Team</h3>
+        <p class="text-muted-foreground">
+          Our team consists of highly qualified and experienced healthcare professionals dedicated to providing the best possible care.
+        </p>
+      </div>
+      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold mb-2">Community Involvement</h3>
+        <p class="text-muted-foreground">
+          We actively participate in community health initiatives and offer educational programs to promote healthy living.
+        </p>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <section id="testimonials" class="py-12 md:py-16 lg:py-20 ">
+        <div class="px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Testimonials</h2>
+            <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Hear what our patients have to say about their experiences at Aditya Clinic.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 ">
+            <div class="bg-card p-6 rounded-lg shadow-md bg-base-100">
+              <p class="text-muted-foreground italic">"He has now become our family doctor, trust me how he treats his patient outstandingly, at low fees, great😊"</p>
+              <p class="text-right font-bold">- Ranjan Mishra</p>
+              <div className="rating">
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-400"
+                  defaultChecked />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+              </div>
+            </div>
+            <div class="bg-card p-6 rounded-lg shadow-md bg-base-100">
+              <p class="text-muted-foreground italic">"Best knowledgeable doctor and good conversation skill and perfect treatment in Naigaon East."</p>
+              <p class="text-right font-bold">- Ashish Kumar</p>
+              <div className="rating">
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-400"
+                  defaultChecked />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+              </div>
+            </div>
+            <div class="bg-card p-6 rounded-lg shadow-md bg-base-100">
+              <p class="text-muted-foreground italic">"Aditya Clinic is my go-to place for all my healthcare needs. The doctors are knowledgeable and the services are comprehensive."</p>
+              <p class="text-right font-bold">- Santosh Yadav</p>
+              <div className="rating">
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-400"
+                  defaultChecked />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
     
     <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
     <div class="grid items-center justify-center gap-4 px-4 text-center md:px-6">
@@ -239,7 +349,7 @@ export default function Home() {
           our experienced doctors.
         </p>
       </div>
-      <div class="mx-auto w-full max-w-sm space-y-2">
+      <div class="mx-auto w-full max-w-sm space-y-2 ">
         <form class="grid gap-4">
           <input
             class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
@@ -261,7 +371,7 @@ export default function Home() {
             placeholder="Reason for visit"
           ></textarea>
           <button
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+            class="inline-flex items-center justify-center base-100space-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
             type="submit"
           >
             Book Appointment
@@ -269,7 +379,43 @@ export default function Home() {
         </form>
       </div>
     </div>
-  </section>
+    </section>
+  
+
+  <section id="faq" class="py-12 md:py-16 lg:py-20">
+        <div class="px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Frequently Asked Questions</h2>
+            <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Find answers to some of the common questions our patients ask.
+            </p>
+          </div>
+          <div className="mt-8 space-y-4">
+            <div className=" p-6 collapse collapse-arrow rounded-lg shadow-md">
+              <input type="radio" name="my-accordion-2" defaultChecked />
+              <div className="collapse-title text-xl font-bold mb-2">What are your clinic hours?</div>
+              <div className="collapse-content">
+              <p>Our clinic is open from 10 AM to 2 PM, 5:30 PM to 11 PM, Monday to Saturday.</p>
+              <p>Our clinic is open from 10 AM to 2:30 PM, 5:30 PM to 11 PM, Only Sunday.</p>
+              </div>
+            </div>
+            <div className="p-6 collapse collapse-arrow rounded-lg shadow-md">
+              <input type="radio" name="my-accordion-2" />
+              <div className="collapse-title text-xl font-bold mb-2">Do you provide Home Visits?</div>
+              <div className="collapse-content">
+                <p>Yeah I do provide home visit.</p>
+              </div>
+            </div>
+            <div className=" p-6 collapse collapse-arrow rounded-lg shadow-md">
+              <input type="radio" name="my-accordion-2" />
+              <div className="collapse-title text-xl font-bold mb-2">How can I book an appointment?</div>
+              <div className="collapse-content">
+              <p>You can book an appointment by calling us at +91 7208253036 or by filling the above form.</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
   </main>
   
 
