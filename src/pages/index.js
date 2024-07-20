@@ -19,9 +19,9 @@ export default function Home() {
             Exceptional Healthcare for Your Family
           </h1>
           <p data-aos="fade" class="max-w-[600px] text-muted-foreground md:text-xl">
-            At our doctor's practice, we are dedicated to providing personalized, compassionate care for patients of
+            {`At our doctor's practice, we are dedicated to providing personalized, compassionate care for patients of
             all ages. From routine check-ups to specialized treatments, we have the expertise to keep your family
-            healthy.
+            healthy.`}
           </p>
         </div>
         <div class="flex flex-col gap-2 min-[400px]:flex-row">
@@ -144,10 +144,9 @@ export default function Home() {
       <div class="px-4 md:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div data-aos="fade">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Dr. Aditya's Clinic?</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">{`Why Choose Dr. Aditya's Clinic?`}</h2>
             <p class="text-muted-foreground mb-6">
-              Our practice is dedicated to providing the highest quality of care for our patients. Here's why you
-              should choose us:
+              {`Our practice is dedicated to providing the highest quality of care for our patients. Here's why you should choose us:`}
             </p>
             <ul class="space-y-4">
               <li class="flex items-start gap-4">
@@ -296,7 +295,7 @@ export default function Home() {
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 ">
             <div data-aos="fade-up" class="bg-card p-6 rounded-lg shadow-md bg-base-100">
-              <p class="text-muted-foreground italic">"He has now become our family doctor, trust me how he treats his patient outstandingly, at low fees, great😊"</p>
+              <p class="text-muted-foreground italic">{`"He has now become our family doctor, trust me how he treats his patient outstandingly, at low fees, great😊"`}</p>
               <p class="text-right font-bold">- Ranjan Mishra</p>
               <div className="rating">
                 <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
@@ -311,7 +310,7 @@ export default function Home() {
               </div>
             </div>
             <div data-aos="fade-up" class="bg-card p-6 rounded-lg shadow-md bg-base-100">
-              <p class="text-muted-foreground italic">"Best knowledgeable doctor and good conversation skill and perfect treatment in Naigaon East."</p>
+              <p class="text-muted-foreground italic">{`"Best knowledgeable doctor and good conversation skill and perfect treatment in Naigaon East."`}</p>
               <p class="text-right font-bold">- Ashish Kumar</p>
               <div className="rating">
                 <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
@@ -326,7 +325,7 @@ export default function Home() {
               </div>
             </div>
             <div data-aos="fade-up" class="bg-card p-6 rounded-lg shadow-md bg-base-100">
-              <p class="text-muted-foreground italic">"Aditya Clinic is my go-to place for all my healthcare needs. The doctors are knowledgeable and the services are comprehensive."</p>
+              <p class="text-muted-foreground italic">{`"Aditya Clinic is my go-to place for all my healthcare needs. The doctors are knowledgeable and the services are comprehensive."`}</p>
               <p class="text-right font-bold">- Santosh Yadav</p>
               <div className="rating">
                 <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
@@ -375,7 +374,7 @@ export default function Home() {
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          <div data-aos="fade-up" class="space-y-4 py-4 p-4 my-4 rounded-lg bg-base-200">
+          <div data-aos="fade-up" class="space-y-4 py-4 p-4 my-4 rounded-xl bg-base-200">
         <div class="flex items-center gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
