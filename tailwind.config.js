@@ -13,35 +13,34 @@ module.exports = {
     themes: [
       {
         light: {
-          ...require("daisyui/src/theming/themes")["light"],
-          "primary": "#3B82F6", // Blue
-          "secondary": "#6D28D9", // Purple
-          "accent": "#F59E0B", // Amber
-          "base-100": "#F3F4F6", // Light Gray
-          "base-200": "#E5E7EB", // Gray
-          "base-300": "#D1D5DB", // Dark Gray
-          "neutral": "#374151", // Darker Gray
-          "info": "#2563EB", // Info Blue
-          "success": "#10B981", // Green
-          "warning": "#FBBF24", // Yellow
-          "error": "#EF4444" // Red
+          ...require("daisyui/src/theming/themes")["[data-theme=light]"],
+          "primary": "#0077b6", // Deep Blue
+          "secondary": "#48cae4", // Light Blue
+          "accent": "#00b4d8", // Cyan
+          "base-100": "#ffffff", // White
+          "base-200": "#f1f5f9", // Light Gray
+          "base-300": "#e2e8f0", // Gray
+          "neutral": "#64748b", // Neutral Gray
+          "info": "#0284c7", // Info Blue
+          "success": "#22c55e", // Green
+          "warning": "#f59e0b", // Yellow
+          "error": "#ef4444" // Red
         },
       },
-
       {
         dark: {
-          ...require("daisyui/src/theming/themes")["dark"],
-          "primary": "#3B82F6", // Blue
-          "secondary": "#A78BFA", // Light Purple
-          "accent": "#FBBF24", // Amber
-          "base-100": "#1F2937", // Dark Gray
-          "base-200": "#111827", // Darker Gray
-          "base-300": "#0F172A", // Even Darker Gray
-          "neutral": "#9CA3AF", // Neutral Gray
-          "info": "#60A5FA", // Info Blue
-          "success": "#34D399", // Green
-          "warning": "#F59E0B", // Yellow
-          "error": "#EF4444" // Red
+          ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
+          "primary": "#0a9396", // Deep Teal
+          "secondary": "#94d2bd", // Light Teal
+          "accent": "#e9d8a6", // Sand
+          "base-100": "#1e293b", // Dark Blue
+          "base-200": "#0f172a", // Darker Blue
+          "base-300": "#334155", // Dark Gray Blue
+          "neutral": "#94a3b8", // Neutral Gray
+          "info": "#0284c7", // Info Blue
+          "success": "#22c55e", // Green
+          "warning": "#f59e0b", // Yellow
+          "error": "#ef4444" // Red
         },
       },
     ],

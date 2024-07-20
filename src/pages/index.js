@@ -1,3 +1,4 @@
+import ContactForm from "@/components/contactForm";
 import Link from "next/link";
 // import ImageWithBlurhash from "@/components/ImageWithBlurhash";
 
@@ -8,16 +9,16 @@ export default function Home() {
 
 
 
-  <main class="">
+  <main>
     
-  <section class="w-full py-12 md:py-24 lg:py-32">
-    <div class="grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
+  <section id="hero" class="w-full py-12 md:py-24 lg:py-32">
+    <div class="grid gap-6 px-4 md:px-8 lg:grid-cols-2 lg:gap-12">
       <div class="flex flex-col justify-center space-y-4">
         <div class="space-y-2">
-          <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+          <h1 data-aos="fade-up" class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
             Exceptional Healthcare for Your Family
           </h1>
-          <p class="max-w-[600px] text-muted-foreground md:text-xl">
+          <p data-aos="fade" class="max-w-[600px] text-muted-foreground md:text-xl">
             At our doctor's practice, we are dedicated to providing personalized, compassionate care for patients of
             all ages. From routine check-ups to specialized treatments, we have the expertise to keep your family
             healthy.
@@ -25,34 +26,38 @@ export default function Home() {
         </div>
         <div class="flex flex-col gap-2 min-[400px]:flex-row">
           <a
-            class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            href="#"
+            data-aos="zoom-in"
+            class="btn btn-primary"
+            href="#contact"
           >
     
             Book Appointment
           </a>
           <a
-            class="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            href="#"
+            data-aos="zoom-in"
+            class="btn"
+            href={"tel:"+process.env.MOBILE_NUMBER}
           >
-            Learn More
+            Call us
           </a>
         </div>
       </div>
       <img
-        src="https://qmedcenter.com/wp-content/uploads/2023/02/Vector-doctor-examining-a-patient-at-the-clinic-portraying-20-qualities-that-make-a-good-doctor.webp"
+
+        data-aos="fade-up"
+        src="/img/dr2.jpg"
         
         alt="Doctor"
-        class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full"
+        class="rounded-xl w-full"
       />
     </div>
   </section>
-    <section id="services" class="py-12 md:py-16 lg:py-20">
+    <section id="services" class="py-12 bg-base-200 md:py-16 lg:py-20">
 
       
-      <div class="px-4 md:px-6">
+      <div class="px-4 md:px-8">
 
-          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+          <div data-aos="fade" class="flex flex-col items-center justify-center space-y-4 text-center">
 
           <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Our Services</h2>
           <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -62,7 +67,7 @@ export default function Home() {
           </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-card p-6 rounded-lg shadow-md">
+          <div data-aos="fade-up" class="bg-card p-6 rounded-lg shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -87,7 +92,7 @@ export default function Home() {
               Our experienced doctors provide comprehensive care for a wide range of medical conditions.
             </p>
           </div>
-          <div class="bg-card p-6 rounded-lg shadow-md">
+          <div data-aos="fade-up" class="bg-card p-6 rounded-lg shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -110,7 +115,7 @@ export default function Home() {
               Dedicated pediatric care for children of all ages, from newborns to adolescents.
             </p>
           </div>
-          <div class="bg-card p-6 rounded-lg shadow-md">
+          <div data-aos="fade-up" class="bg-card p-6 rounded-lg shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -135,11 +140,11 @@ export default function Home() {
         </div>
       </div>
     </section>
-    <section id="why-us" class="bg-muted py-12 md:py-16 lg:py-20">
-      <div class="px-4 md:px-6">
+    <section id="why-us" class="py-12 md:py-16 lg:py-20">
+      <div class="px-4 md:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Dr. Smith's Practice?</h2>
+          <div data-aos="fade">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Dr. Aditya's Clinic?</h2>
             <p class="text-muted-foreground mb-6">
               Our practice is dedicated to providing the highest quality of care for our patients. Here's why you
               should choose us:
@@ -216,13 +221,12 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div class="flex items-center justify-center">
+          <div data-aos="fade-up" class="flex items-center justify-center">
             <img
-              src="https://pixabay.com/get/g418bc94cb787ff35c4c13a909d8decbe7a20f92f2f3478067e7f34aaea2e0eaaa5ebd4b8bcf995b0c14ffcb39e2683a924f41ad5ab173878dfbd783cf5137c7c5769a715e6581bad1b7a47275b998a38_640.jpg"
-              width="500"
-              height="500"
+              src="/img/dr1.jpg"
+              
               alt="Doctor"
-              class="rounded-lg shadow-lg"
+              class="rounded-lg shadow-lg full-w"
               // style="aspect-ratio: 500 / 500; object-fit: cover;"
             />
           </div>
@@ -231,27 +235,27 @@ export default function Home() {
     </section>
 
     <section id="about" class="py-12 md:py-16 lg:py-20 bg-base-200">
-  <div class="px-4 md:px-6">
-    <div class="flex flex-col items-center justify-center space-y-4 text-center">
+  <div class="px-4 md:px-8">
+    <div data-aos="fade" class="flex flex-col items-center justify-center space-y-4 text-center">
       <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">About Us</h2>
       <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
         At Aditya Clinic, we believe in providing holistic healthcare services that focus on the well-being of the entire family. Our clinic is equipped with state-of-the-art facilities and a team of experienced healthcare professionals who are dedicated to offering compassionate and personalized care.
       </p>
     </div>
     <div class="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+      <div data-aos="fade-up" class="bg-base-100 p-6 rounded-lg shadow-md">
         <h3 class="text-2xl font-bold mb-2">Our Mission</h3>
         <p class="text-muted-foreground">
           To deliver exceptional healthcare services that enhance the quality of life for our patients and their families.
         </p>
       </div>
-      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+      <div data-aos="fade-up" class="bg-base-100 p-6 rounded-lg shadow-md">
         <h3 class="text-2xl font-bold mb-2">Our Vision</h3>
         <p class="text-muted-foreground">
           To be the leading healthcare provider in our community, known for our commitment to patient care and excellence in medical services.
         </p>
       </div>
-      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+      <div data-aos="fade-up" class="bg-base-100 p-6 rounded-lg shadow-md">
         <h3 class="text-2xl font-bold mb-2">Our Values</h3>
         <ul class="text-muted-foreground list-disc list-inside">
           <li>Compassion</li>
@@ -260,19 +264,19 @@ export default function Home() {
           <li>Respect</li>
         </ul>
       </div>
-      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+      <div data-aos="fade-up" class="bg-base-100 p-6 rounded-lg shadow-md">
         <h3 class="text-2xl font-bold mb-2">Our Facilities</h3>
         <p class="text-muted-foreground">
           We offer a range of state-of-the-art facilities including modern diagnostic equipment and comfortable patient care areas.
         </p>
       </div>
-      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+      <div data-aos="fade-up" class="bg-base-100 p-6 rounded-lg shadow-md">
         <h3 class="text-2xl font-bold mb-2">Our Team</h3>
         <p class="text-muted-foreground">
           Our team consists of highly qualified and experienced healthcare professionals dedicated to providing the best possible care.
         </p>
       </div>
-      <div class="bg-base-100 p-6 rounded-lg shadow-md">
+      <div data-aos="fade-up" class="bg-base-100 p-6 rounded-lg shadow-md">
         <h3 class="text-2xl font-bold mb-2">Community Involvement</h3>
         <p class="text-muted-foreground">
           We actively participate in community health initiatives and offer educational programs to promote healthy living.
@@ -283,15 +287,15 @@ export default function Home() {
     </section>
 
     <section id="testimonials" class="py-12 md:py-16 lg:py-20 ">
-        <div class="px-4 md:px-6">
-          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+        <div class="px-4 md:px-8">
+          <div data-aos="fade" class="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Testimonials</h2>
             <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Hear what our patients have to say about their experiences at Aditya Clinic.
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 ">
-            <div class="bg-card p-6 rounded-lg shadow-md bg-base-100">
+            <div data-aos="fade-up" class="bg-card p-6 rounded-lg shadow-md bg-base-100">
               <p class="text-muted-foreground italic">"He has now become our family doctor, trust me how he treats his patient outstandingly, at low fees, great😊"</p>
               <p class="text-right font-bold">- Ranjan Mishra</p>
               <div className="rating">
@@ -306,7 +310,7 @@ export default function Home() {
                 <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
               </div>
             </div>
-            <div class="bg-card p-6 rounded-lg shadow-md bg-base-100">
+            <div data-aos="fade-up" class="bg-card p-6 rounded-lg shadow-md bg-base-100">
               <p class="text-muted-foreground italic">"Best knowledgeable doctor and good conversation skill and perfect treatment in Naigaon East."</p>
               <p class="text-right font-bold">- Ashish Kumar</p>
               <div className="rating">
@@ -321,7 +325,7 @@ export default function Home() {
                 <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
               </div>
             </div>
-            <div class="bg-card p-6 rounded-lg shadow-md bg-base-100">
+            <div data-aos="fade-up" class="bg-card p-6 rounded-lg shadow-md bg-base-100">
               <p class="text-muted-foreground italic">"Aditya Clinic is my go-to place for all my healthcare needs. The doctors are knowledgeable and the services are comprehensive."</p>
               <p class="text-right font-bold">- Santosh Yadav</p>
               <div className="rating">
@@ -337,82 +341,160 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <p data-aos="fade" className="text-center py-4">Visit <a target="_blank" className="text-primary" href="https://maps.app.goo.gl/7hpwq6WBE6rhCnkB9">Google Maps</a> to read more reviews</p>
         </div>
     </section>
     
-    <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
-    <div class="grid items-center justify-center gap-4 px-4 text-center md:px-6">
-      <div class="space-y-3">
+    <section id="contact" class="w-full py-12 md:py-24 lg:py-32 bg-base-200">
+    <div class="grid items-center justify-center gap-4 px-4 text-center md:px-8">
+      <div data-aos="fade" class="space-y-3">
         <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">Schedule an Appointment</h2>
         <p class="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
           Take the first step towards better health. Fill out the form below to schedule an appointment with one of
           our experienced doctors.
         </p>
       </div>
-      <div class="mx-auto w-full max-w-sm space-y-2 ">
-        <form class="grid gap-4">
-          <input
-            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
-            placeholder="Name"
-            type="text"
-          />
-          <input
-            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
-            placeholder="Email"
-            type="email"
-          />
-          <input
-            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
-            placeholder="Phone"
-            type="tel"
-          />
-          <textarea
-            class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
-            placeholder="Reason for visit"
-          ></textarea>
-          <button
-            class="inline-flex items-center justify-center base-100space-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
-            type="submit"
-          >
-            Book Appointment
-          </button>
-        </form>
+      <div data-aos="fade-up" class="mx-auto w-full max-w-sm space-y-2 ">
+        <ContactForm />
       </div>
     </div>
     </section>
+
+
+    <section id="visit-us" class="w-full py-12 md:py-24 lg:py-32 bg-base-100">
+ 
+    <div class="px-4 md:px-8">
+
+        <div data-aos="fade">
+        <h2  className="text-3xl font-bold sm:text-4xl md:text-5xl">Visit Us</h2>
+            <p className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Come see us in person at our clinic.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          <div data-aos="fade-up" class="space-y-4 py-4 p-4 my-4 rounded-lg bg-base-200">
+        <div class="flex items-center gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-6 w-6 text-primary"
+          >
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <div>
+            <div class="font-medium">Phone</div>
+            <a href="#" class="text-muted-foreground hover:underline">
+              +1 (555) 123-4567
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-6 w-6 text-primary"
+          >
+            <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"></path>
+            <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"></path>
+          </svg>
+          <div>
+            <div class="font-medium">Email</div>
+            <a href="#" class="text-muted-foreground hover:underline">
+              info@acme.com
+            </a>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-6 w-6 text-primary"
+          >
+            <line x1="2" x2="5" y1="12" y2="12"></line>
+            <line x1="19" x2="22" y1="12" y2="12"></line>
+            <line x1="12" x2="12" y1="2" y2="5"></line>
+            <line x1="12" x2="12" y1="19" y2="22"></line>
+            <circle cx="12" cy="12" r="7"></circle>
+          </svg>
+          <div>
+            <div class="font-medium">Address</div>
+            <p class="text-muted-foreground">123 Main St, Anytown USA 12345</p>
+          </div>
+          </div>
+
+          </div>
+
+          
+          <div data-aos="fade-up" className="my-4">
+          <div className="w-full border rounded-xl">
+          <iframe className="w-full rounded-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.541067988197!2d72.8603544!3d19.3632948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7af91fcb511b9%3A0x3a4f1d8bd63944b0!2sAditya%20Clinic!5e0!3m2!1sen!2sin!4v1721459560799!5m2!1sen!2sin" width="auto" height="320" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
   
+    <hr />
+
 
   <section id="faq" class="py-12 md:py-16 lg:py-20">
-        <div class="px-4 md:px-6">
-          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+        <div class="px-4 md:px-8">
+          <div data-aos="fade" class="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Frequently Asked Questions</h2>
             <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Find answers to some of the common questions our patients ask.
             </p>
           </div>
           <div className="mt-8 space-y-4">
-            <div className=" p-6 collapse collapse-arrow rounded-lg shadow-md">
-              <input type="radio" name="my-accordion-2" defaultChecked />
-              <div className="collapse-title text-xl font-bold mb-2">What are your clinic hours?</div>
-              <div className="collapse-content">
-              <p>Our clinic is open from 10 AM to 2 PM, 5:30 PM to 11 PM, Monday to Saturday.</p>
-              <p>Our clinic is open from 10 AM to 2:30 PM, 5:30 PM to 11 PM, Only Sunday.</p>
-              </div>
+
+          <details data-aos="fade-up" className="p-2 collapse collapse-arrow rounded-lg shadow">
+            <summary className="collapse-title text-xl font-medium">What are your clinic hours?</summary>
+            <div className="collapse-content">
+            <p>Our clinic is open from 10 AM to 2 PM, 5:30 PM to 11 PM, Monday to Saturday.</p>
+            <p>Our clinic is open from 10 AM to 2:30 PM, 5:30 PM to 11 PM, Only Sunday.</p>
             </div>
-            <div className="p-6 collapse collapse-arrow rounded-lg shadow-md">
-              <input type="radio" name="my-accordion-2" />
-              <div className="collapse-title text-xl font-bold mb-2">Do you provide Home Visits?</div>
-              <div className="collapse-content">
-                <p>Yeah I do provide home visit.</p>
-              </div>
+          </details>
+
+          <details data-aos="fade-up" className="p-2 collapse collapse-arrow rounded-lg shadow">
+            <summary className="collapse-title text-xl font-medium">Do you provide Home Visits?</summary>
+            <div className="collapse-content">
+            <p>Yeah I do provide home visit.</p>
             </div>
-            <div className=" p-6 collapse collapse-arrow rounded-lg shadow-md">
-              <input type="radio" name="my-accordion-2" />
-              <div className="collapse-title text-xl font-bold mb-2">How can I book an appointment?</div>
-              <div className="collapse-content">
-              <p>You can book an appointment by calling us at +91 7208253036 or by filling the above form.</p>
-              </div>
+          </details>
+
+          <details data-aos="fade-up" className="p-2 collapse collapse-arrow rounded-lg shadow">
+            <summary className="collapse-title text-xl font-medium">How can I book an appointment?</summary>
+            <div className="collapse-content">
+            <p>You can book an appointment by calling us at +91 7208253036 or by filling the above form.</p>
             </div>
+          </details>
+            
+           
           </div>  
         </div>
       </section>
