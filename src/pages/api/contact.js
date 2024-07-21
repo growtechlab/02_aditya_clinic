@@ -31,7 +31,7 @@ export default async function handler(req, res) {
         `;
 
         try {
-            await sendEmail(["dy8277554@gmail.com", "maurya.iitk@gmail.com"], `${name} has contacted from Shreeju Investments Website`, htmlContent);
+            await sendEmail(["maurya.iitk@gmail.com"], `${name} has contacted from Shreeju Investments Website`, htmlContent);
             res.status(200).json({ message: "Success: email was sent" });
         } catch (error) {
             console.log(error);
