@@ -448,7 +448,7 @@ export default function Home() {
           <div>
             <div className="font-medium">Email</div>
             <a href="#" className="text-muted-foreground hover:underline">
-              info@acme.com
+              dy8277554@gmail.com
             </a>
           </div>
         </div>
