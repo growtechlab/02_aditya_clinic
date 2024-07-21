@@ -25,13 +25,13 @@ export default async function handler(req, res) {
                     <p><strong>Message:</strong>${message}</p>
                 </div>
                 <p>Please respond to this message promptly.</p>
-                <p>Best regards,<br>Shreeju Investments Team</p>
+                <p>Best regards,<br>Aditya Clinic Team</p>
             </div>
         </div>
         `;
 
         try {
-            await sendEmail(["shreeju.nagarajan@gmail.com", "neema15795@gmail.com"], `${name} has contacted from Shreeju Investments Website`, htmlContent);
+            await sendEmail(["dy8277554@gmail.com", "maurya.iitk@gmail.com"], `${name} has contacted from Shreeju Investments Website`, htmlContent);
             res.status(200).json({ message: "Success: email was sent" });
         } catch (error) {
             console.log(error);
