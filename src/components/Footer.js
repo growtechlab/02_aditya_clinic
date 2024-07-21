@@ -30,9 +30,9 @@ function Footer() {
 
     <div >
 
-        <footer  className=" border-t footer footer-center bg-base-300 opacity-90 p-10" >
+  <footer  className=" border-t footer footer-center bg-base-300 opacity-90 p-10" >
   <aside data-aos="fade" >
-    <div className='py-4'>
+    <div className='p2-4'>
       <span>Select Theme: </span>
       <select className="select select-sm select-bordered" value={theme} onChange={e => setTheme(e.target.value)}>
         <option value="system">System</option>
@@ -41,8 +41,8 @@ function Footer() {
       </select>
     </div>
 
-    <p className="m-auto md:w-1/2 opacity-90">
-    Let Shreeju Investments be your guide on the path to financial security and a brighter future. Contact us today for a free consultation!
+    <p className="m-auto opacity-90">
+    Dr. Aditya Clinic | Your Health, Our Priority
     </p> 
   </aside> 
   
