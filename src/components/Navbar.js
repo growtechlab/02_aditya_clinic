@@ -36,7 +36,7 @@ function Navbar(){
     </div>
     <Link href="/" className="btn btn-ghost text-xl">
     <CiHospital1 className="text-primary" size={30} />
-      Dr. Aditya
+      Aditya Clinic
     </Link>
   </div>
 

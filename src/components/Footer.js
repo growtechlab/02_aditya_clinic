@@ -42,7 +42,7 @@ function Footer() {
     </div>
 
     <p className="m-auto opacity-90">
-    Dr. Aditya Clinic | Your Health, Our Priority
+    Aditya Clinic | Your Health, Our Priority
     </p> 
   </aside> 
   

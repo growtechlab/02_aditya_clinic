@@ -26,7 +26,7 @@ export default function Home() {
       <div className="flex flex-col justify-center space-y-4">
         <div className="space-y-4">
           <h1 data-aos="fade" className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-            Welcome to Dr. Aditya Clinic
+            Welcome to Aditya Clinic
           </h1>
           <p data-aos="fade-up" className="max-w-[600px] text-muted-foreground md:text-lg">
             {`The clinic is dedicated to providing high-quality medical care to patients of all ages, ranging from newborns to seniors. With a team of experienced and compassionate doctors, nurses, and support staff, Aditya Clinic is committed to helping patients achieve optimal health outcomes`}
@@ -38,7 +38,6 @@ export default function Home() {
             className="btn btn-primary"
             href="#contact"
           >
-    
             Book Appointment
           </a>
           <a
@@ -73,101 +72,99 @@ export default function Home() {
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="w-8 h-8 mb-4 text-primary"
-        >
-          <path d="M12 6v4"></path>
-          <path d="M14 14h-4"></path>
-          <path d="M14 18h-4"></path>
-          <path d="M14 8h-4"></path>
-          <path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2"></path>
-          <path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18"></path>
-        </svg>
-        <h3 className="text-2xl font-bold mb-2">Preventive Care</h3>
-        <p className="text-muted-foreground">
-          Comprehensive preventive care to maintain and improve your overall health and well-being.
-        </p>
-      </div>
-      <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="w-8 h-8 mb-4 text-primary"
-        >
-          <path d="M9 12h.01"></path>
-          <path d="M15 12h.01"></path>
-          <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path>
-          <path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"></path>
-        </svg>
-        <h3 className="text-2xl font-bold mb-2">Primary Care</h3>
-        <p className="text-muted-foreground">
-          Comprehensive primary care services for patients of all ages, from newborns to seniors.
-        </p>
-      </div>
-      <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="w-8 h-8 mb-4 text-primary"
-        >
-          <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"></path>
-          <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"></path>
-          <circle cx="20" cy="10" r="2"></circle>
-        </svg>
-        <h3 className="text-2xl font-bold mb-2">Surgical Procedures</h3>
-        <p className="text-muted-foreground">
-          Expert surgical procedures for a range of medical conditions, ensuring the best possible outcomes.
-        </p>
-      </div>
-      <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
-        <FaUserDoctor className="w-8 h-8 mb-4 text-primary" />
+  <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="w-8 h-8 mb-4 text-primary"
+    >
+      <path d="M12 6v4"></path>
+      <path d="M14 14h-4"></path>
+      <path d="M14 18h-4"></path>
+      <path d="M14 8h-4"></path>
+      <path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2"></path>
+      <path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18"></path>
+    </svg>
+    <h3 className="text-2xl font-bold mb-2">Preventive Care</h3>
+    <p className="text-muted-foreground">
+      Comprehensive preventive care to maintain and improve your overall health and well-being.
+    </p>
+  </div>
+  <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="w-8 h-8 mb-4 text-primary"
+    >
+      <path d="M9 12h.01"></path>
+      <path d="M15 12h.01"></path>
+      <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path>
+      <path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"></path>
+    </svg>
+    <h3 className="text-2xl font-bold mb-2">Primary Care</h3>
+    <p className="text-muted-foreground">
+      Comprehensive primary care services for patients of all ages, from newborns to seniors.
+    </p>
+  </div>
+  <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="w-8 h-8 mb-4 text-primary"
+    >
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M12 6v6l4 2"></path>
+    </svg>
+    <h3 className="text-2xl font-bold mb-2">Health Checkups</h3>
+    <p className="text-muted-foreground">
+      Routine health checkups to assess and monitor your overall health.
+    </p>
+  </div>
+  <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
+    <FaUserDoctor className="w-8 h-8 mb-4 text-primary" />
+    <h3 className="text-2xl font-bold mb-2">Chronic Disease Care</h3>
+    <p className="text-muted-foreground">
+      Specialized care for chronic conditions such as diabetes, hypertension, and heart disease.
+    </p>
+  </div>
+  <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
+    <GiMedicines className="w-8 h-8 mb-4 text-primary" />
+    <h3 className="text-2xl font-bold mb-2">Acute Illness Treatment</h3>
+    <p className="text-muted-foreground">
+      Prompt and effective treatment for acute illnesses such as colds, flu, and infections.
+    </p>
+  </div>
+  <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
+    <MdFamilyRestroom className="w-8 h-8 mb-4 text-primary" />
+    <h3 className="text-2xl font-bold mb-2">Family Planning Services</h3>
+    <p className="text-muted-foreground">
+      Comprehensive family planning services including counseling and various contraceptive options.
+    </p>
+  </div>
+</div>
 
-        <h3 className="text-2xl font-bold mb-2">Chronic Disease Care</h3>
-        <p className="text-muted-foreground">
-          Specialized care for chronic conditions such as diabetes, hypertension, and heart disease.
-        </p>
-      </div>
-      <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
-      <GiMedicines className="w-8 h-8 mb-4 text-primary" />
 
-        <h3 className="text-2xl font-bold mb-2">Acute Illness Treatment</h3>
-        <p className="text-muted-foreground">
-          Prompt and effective treatment for acute illnesses such as colds, flu, and infections.
-        </p>
-      </div>
-      <div data-aos="fade-up" className="bg-card p-6 rounded-lg shadow-md">
-        <MdFamilyRestroom className="w-8 h-8 mb-4 text-primary" />
-
-        <h3 className="text-2xl font-bold mb-2">Family Planning Services</h3>
-        <p className="text-muted-foreground">
-          Comprehensive family planning services including counseling and various contraceptive options.
-        </p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -176,7 +173,7 @@ export default function Home() {
       <div className="px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div data-aos="fade">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{`Why Choose Dr. Aditya's Clinic?`}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{`Why Choose Aditya Clinic?`}</h2>
             <p className="text-muted-foreground mb-6">
               {`Our practice is dedicated to providing the highest quality of care for our patients. Here's why you should choose us:`}
             </p>
