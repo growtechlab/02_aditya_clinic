@@ -35,7 +35,8 @@ function Navbar(){
 
     </div>
     <Link href="/" className="btn btn-ghost text-xl">
-    <CiHospital1 className="text-primary" size={30} />
+    {/* <CiHospital1 className="text-primary" size={30} /> */}
+    <img src="/img/logo.png" width={40} height={40} alt="Logo of doctor"/>
       Aditya Clinic
     </Link>
   </div>
