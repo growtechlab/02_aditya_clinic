@@ -53,7 +53,8 @@ export default function Home() {
 
         data-aos="fade-up"
         src="/img/dr2.jpg"
-        
+        width={30}
+        height={30}
         alt="Doctor"
         className="rounded-xl w-full"
       />
@@ -379,12 +380,36 @@ export default function Home() {
       <div data-aos="fade" className="space-y-3">
         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Schedule an Appointment</h2>
         <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          Take the first step towards better health. Fill out the form below to schedule an appointment with one of
+          Take the first step towards better health. Contact the Number below to schedule an appointment with one of
           our experienced doctors.
         </p>
       </div>
       <div data-aos="fade-up" className="mx-auto w-full max-w-sm space-y-2 ">
-        <ContactForm />
+        {/* <ContactForm /> */}
+        <div className="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-indigo-500 rounded-md group">
+          <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+            <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+          </span>
+          <span className="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-ml-4 group-hover:-mb-4">
+            <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+          </span>
+          <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-indigo-600 rounded-md group-hover:translate-x-0"></span>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="h-8 w-8 relative text-white transition-colors duration-200 ease-in-out group-hover:text-white"
+          >
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <a href={"tel:"+process.env.MOBILE_NUMBER} className=" text-4xl relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">+91 90284 37292</a>
+        </div>
       </div>
     </div>
     </section>
@@ -421,7 +446,7 @@ export default function Home() {
           </svg>
           <div>
             <div className="font-medium">Phone</div>
-            <a href="#" className="text-muted-foreground hover:underline">
+            <a href={"tel:"+process.env.MOBILE_NUMBER} className="text-muted-foreground hover:underline">
               +91 9028-43-7292
             </a>
           </div>
