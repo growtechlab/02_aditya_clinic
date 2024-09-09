@@ -29,7 +29,7 @@ export default function Home() {
             Welcome to Aditya Clinic
           </h1>
           <p data-aos="fade-up" className="max-w-[600px] text-muted-foreground md:text-lg">
-            {`The clinic is dedicated to providing high-quality medical care to patients of all ages, ranging from newborns to seniors. With a team of experienced and compassionate doctors, nurses, and support staff, Aditya Clinic is committed to helping patients achieve optimal health outcomes`}
+            {`Dr. Dhirendra Yadav is dedicated to providing high-quality medical care to patients of all ages, ranging from newborns to seniors. With a team of experienced and compassionate doctors, nurses, and support staff, Aditya Clinic is committed to helping patients achieve optimal health outcomes`}
           </p>
         </div>
         <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -527,7 +527,7 @@ export default function Home() {
           <details data-aos="fade-up" className="p-2 collapse collapse-arrow rounded-lg shadow">
             <summary className="collapse-title text-xl font-medium">How can I book an appointment?</summary>
             <div className="collapse-content">
-            <p>You can book an appointment by calling us at +91 7208253036 or by filling the above form.</p>
+            <p>You can book an appointment by calling us at +91 90284 37292.</p>
             </div>
           </details>
             
